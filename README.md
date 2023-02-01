@@ -19,7 +19,7 @@ The personal site has been developed to provide information about me and my hobb
 
 To run the personal site locally, follow these steps:
 
-1. Clone the repository to your local machine using the command git clone https://github.com/<username>/personal-site.git
+1. Clone the repository to your local machine using the command git clone https://github.com/silviucoler/finalCapstone.git
 2. Navigate to the project directory using the command cd personal-site
 3. Install the necessary dependencies using the command npm install
 4. Start the local development server using the command npm start
