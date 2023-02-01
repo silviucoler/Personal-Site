@@ -26,7 +26,14 @@ To run the personal site locally, follow these steps:
 
 ## Usage
 
-Once the local development server is running, access the website in your browser at http://localhost:3000. The site should display information about me and my hobbies, as well as navigation links to different sections of the site.
+Once the local development server is running, access the website in your browser at http://localhost:3000. The site should display information about me and my hobbies, as well as navigation links to different sections of the site. Alternatively, open the index.html file which will display the website locally.
+
+![alt text](images/SS1.png)
+![alt text](images/SS2.png)
+![alt text](images/SS3.png)
+![alt text](images/SS4.png)
+![alt text](images/SS5.png)
+![alt text](images/SS6.png)
 
 ## Credits
 
