@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Silviu's Personal Site</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;900&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap stylesheet - I decided to use this as it's easier to create responsive websites as opposed to purely using HTML and CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Stylesheet -->
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font awesome to access the icons-->
+    <script
+      src="https://kit.fontawesome.com/c09b27e0a5.js"
+      crossorigin="anonymous"
+    ></script>
+<body>
+    <section class="colored-section" id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar  -- Used bootstrap documentation for this. Still need to add functionality to the collapse option-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hobbies">Hobbies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="save-btn" href="saveForLater.html">Saved Items</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- on any screen size that's a laptop or bigger it will be 6 per row.
+           Anything smaller it will take the full size. no need to specify "col-md-12"-->
+            <h1 class="big-heading">I'm Silviu</h1>
+            <h2 class="small-heading">A web developer</h2>
+          </div>
+
+          <!-- Note that this image is not behaving as I want it to and I need to look at it again but that  will be as I progress with building my own website. -->
+          <div class="col-lg-6 title-image-div">
+            <img
+              class="title-image"
+              src="images/Silviu.jpg"
+              alt="Silviu image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured hobbies -->
+
+    <section class="white-section" id="featured">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="feature-box col-lg-4">
+            <i class="fa-solid fa-gamepad icon fa-4x"></i>
+            <h3 class="feature-title">Gaming</h3>
+            <p>I have been playing games since the age of 10.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="fa-solid fa-futbol icon fa-4x"></i>
+            <h3 class="feature-title">Football</h3>
+            <p>I love watching and playing football.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="fa-solid fa-plane icon fa-4x"></i>
+            <h3 class="feature-title">Travelling</h3>
+            <p>
+              I want to visit all original seven wonders of the world by the age
+              of 30.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials/Quotes -->
+
+    <!-- I tried using a carousel function but I haven't quite gotten the hang of it yet. I will keep trying. -->
+
+    <section class="colored-section" id="testimonials">
+      <div
+        id="testimonial-carousel"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2 class="testimonial-text">
+              Your time is limited, so don't waste it living someone else's
+              life.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="images/steve-jobs.jpg"
+              alt="steve-jobs"
+            />
+            <em>Steve Jobs</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">
+              If you tell the truth, you don't have to remember anything.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="images/mark-twain.jpg"
+              alt="mark-twain"
+            />
+            <em>Mark Twain</em>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonial-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonial-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Hobbies-->
+    <!-- I have added an emoji that only appears when you hover over a specific <p> in my Hobbies tables. Clicking it will add that item to tthe saveForLater.html page -->
+    <section class="white-section" id="hobbies">
+      <h2 class="section-heading">A further look at my hobbies</h2>
+
+      <div class="row">
+        <div class="hobbies-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Gaming - Favourite Titles</h3>
+            </div>
+            <div class="card-body">
+              <p id="item1">Red Dead Redemption <button class="save-btn" id="btn1">❤️</button></p>
+              <p id="item2">God of War <button class="save-btn" id="btn2">❤️</button></p>
+              <p id="item3">Grand Theft Auto <button class="save-btn" id="btn3">❤️</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="hobbies-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Football - Favourite things about it</h3>
+            </div>
+            <div class="card-body">
+              <p>Chelsea FC <button class="save-btn" id="btn4">❤️</button></p>
+              <p>Hometown tournaments <button class="save-btn" id="btn5">❤️</button></p>
+              <p>Going to Stamford Bridge <button class="save-btn" id="btn6">❤️</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="hobbies-column col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>Travelling - Wonders I've already visited</h3>
+            </div>
+            <div class="card-body">
+              <p>Colloseumm, Rome <button class="save-btn" id="btn7">❤️</button></p>
+              <p>Petra, Jordan <button class="save-btn" id="btn8">❤️</button></p>
+              <p>Chichén Itzá, Mexico <button class="save-btn" id="btn9">❤️</button></p>
+              <p>Machu Picchu, Peru <button class="save-btn" id="btn10">❤️</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Create a form to allow user to choose ("like") their favourite game of the three. -->
+
+      <h3>Which of the three games is your favourite?</h3>
+      <form id="like-form">
+        <select id="hobby-select">
+          <option value="item1">Red Dead Redemption</option>
+          <option value="item2">God of War</option>
+          <option value="item3">Grand Theft Auto</option>
+        </select>
+        <button id="like-button">👍</button>
+        <button id="unlike-button">👎</button>
+      </form>
+    </section>
+
+    <!-- Allow user to leave comments-->
+
+    <section class="colored-section">
+      <div class="container-fluid">
+        <div class="form-group">
+          <textarea class="form-control" rows="5" placeholder="Leave a comment..."></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary submit-button">Submit</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="white-section" id="footer">
+      <div class="container-fluid">
+        <a href="https://www.linkedin.com/in/silviucoler/"
+          ><i class="fa-brands fa-linkedin fa-footer"></i
+        ></a>
+        <a href="https://github.com/silviucoler"
+          ><i class="fa-brands fa-github fa-footer"></i
+        ></a>
+
+        <a href="mailto:silviu.coler@hotmail.co.uk"
+          ><i class="fa-solid fa-envelope fa-footer"></i
+        ></a>
+
+        <p>© Copyright Silviu Coler</p>
+      </div>
+    </footer>
+  
+    <script src="javascript/script.js"></script>
+    <script src="javascript/savedItems.js"></script>
+  </body>
+</html>
+
+
+
+<!-- REFERENCES/CREDIT:
+Bootstrap documentation
+Mozilla MDN
+W3 Schools
+Font awesome
+Previous HTML/CSS experience and previous code that I've written for different projects-->
+
